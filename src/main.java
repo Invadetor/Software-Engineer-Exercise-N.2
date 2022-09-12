@@ -1,3 +1,4 @@
+import Boundary.FormProprietario;
 import Control.AttivitaController;
 import Entity.Agenda;
 import Entity.Attivita;
@@ -5,7 +6,7 @@ import Entity.Progetto;
 
 public class main {
     public static void main (String[] args) {
-        Progetto p1 = new Progetto("progetto num. 1");
+        /*Progetto p1 = new Progetto("progetto num. 1");
         Agenda.getAgenda().addProgetto(p1);
         AttivitaController.aggiungiAttivita("attivita p1, n1", "24/02/2100", p1.getNome());
         AttivitaController.aggiungiAttivita("attivita p1, n2", "11/05/2100", p1.getNome());
@@ -30,6 +31,9 @@ public class main {
             System.out.println(a.getNome());
             System.out.println(a.getData());
             System.out.println(a.getNumero_ordine());
-        }
+        }*/
+
+        FormProprietario f = new FormProprietario();
+        f.AggiungiHandler();
     }
 }

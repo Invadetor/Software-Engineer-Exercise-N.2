@@ -33,6 +33,11 @@ public class AttivitaController {
 		} catch (ParseException e){e.printStackTrace();}
 	}
 
+	public static void aggiungiProgetto (String progetto) {
+		Progetto p = new Progetto(progetto);
+		Agenda.getAgenda().addProgetto(p);
+	}
+
 	public static ArrayList<Attivita> visualizzaAttivita() {
 		return Agenda.getAgenda().getAttivita();
 	}
